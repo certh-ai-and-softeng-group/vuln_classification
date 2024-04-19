@@ -34,7 +34,9 @@ The jupyter notebook files (.ipynb) are python files, which perform the whole an
 ### Acknowledgements
 
 Special thanks to HuggingFace for providing the transformers libary
+
 Special thanks to Gensim for providing word embeddings models
+
 Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natural Codebase for providing their dataset.
 
 ~~~
