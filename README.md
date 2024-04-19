@@ -14,6 +14,7 @@ The csv files in the repository are the pre-processed formats of the dataset (ba
 The jupyter notebook files (.ipynb) are python files, which perform the whole analysis. 
 Specifically:
 • data_preparation constructs the dataset
+
 • train_embeddings trains custom word embedding vectors using either word2vec or fastText
 • category_prediction contains the source code for employing and training word embedding algorithms (bag of words, word2vec, fastText, bert, codebert), Machine Learning and Deep Learning models
 • category_prediction_RF_averagedEmbeddings creates sentence-level vectors from the word embeddings (word2vec, fastText) and feeds them to ML models (Random Forest)
@@ -26,6 +27,7 @@ Specifically:
 Special thanks to Hugging Face Libary for providing pre-trained Transformer-based Large Language Models
 Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natural Codebase for providing their dataset
 
+~~~
 @article{wartschinski2022vudenc,
   title={VUDENC: vulnerability detection with deep learning on a natural codebase for Python},
   author={Wartschinski, Laura and Noller, Yannic and Vogel, Thomas and Kehrer, Timo and Grunske, Lars},
@@ -35,6 +37,7 @@ Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natur
   year={2022},
   publisher={Elsevier}
 }
+~~~
 
 ### Appendix
 
@@ -48,7 +51,6 @@ F1-score per category for different examined models
 | Remote Code Execution   | 81                   | 71               | 86       | 80            | 81            |
 | Command Injection       | 91                   | 86               | 77       | 85            | 81            |
 | Path Disclosure         | 87                   | 85               | 68       | 72            | 79            |
-                                            |
 
 ### License
 
