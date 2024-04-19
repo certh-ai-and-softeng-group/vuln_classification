@@ -13,10 +13,9 @@ The "data" directory contains the data required for training and evaluating the 
 
 The csv files in the repository are the pre-processed formats of the dataset (bag of words, sequences of tokens).
 
-The jupyter notebook files (.ipynb) are python files, which perform the whole analysis. 
+The jupyter notebook files (.ipynb) are python files, which perform the whole analysis. Specifically:
 
 
-Specifically:
 • data_preparation constructs the dataset
 
 • train_embeddings trains custom word embedding vectors using either word2vec or fastText
