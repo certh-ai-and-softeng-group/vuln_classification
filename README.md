@@ -51,7 +51,38 @@ Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natur
 
 ### Appendix
 
-F1-score per category for different examined models
+Evaluation results of the Random Forest classifier per text vectorizing method
+| Vectorizing Method | Accuracy (%) | Precision (%) | Recall (%) | F1-score (%) |
+|--------------------|--------------|---------------|------------|--------------|
+| Bag-of-Words       | 81.9         | 82.3          | 77.2       | 79.1         |
+| Word2vec           | 71.6         | 76.2          | 64.3       | 68.0         |
+| fastText           | 80.2         | 84.0          | 73.9       | 77.7         |
+| BERT               | 76.9         | 86.6          | 69.4       | 75.1         |
+| CodeBERT           | 80.7         | 87.6          | 72.9       | 78.0         |
+
+
+Classification Performance of NLP models with prior knowledge of natural language versus programming language
+| Vectorizing Method        | Accuracy (%) | Precision (%) | Recall (%) | F1-score (%) |
+|---------------------------|--------------|---------------|------------|--------------|
+| pre-trained Word2vec      | 68.1         | 73.2          | 59.9       | 63.8         |
+| re-trained Word2vec       | 71.6         | 76.2          | 64.3       | 68.0         |
+| pre-trained fastText      | 74.9         | 78.0          | 68.0       | 71.5         |
+| re-trained fastText       | 80.2         | 84.0          | 73.9       | 77.7         |
+| pre-trained BERT          | 76.9         | 86.6          | 69.4       | 75.1         |
+| pre-trained CodeBERT      | 80.7         | 87.6          | 72.9       | 78.0         |
+
+
+Comparison of embeddings extraction and fine-tuning of Transformer models approaches
+| Vectorizing Method | Accuracy (%) | Precision (%) | Recall (%) | F1-score (%) |
+|--------------------|--------------|---------------|------------|--------------|
+| BERT + RF          | 76.9         | 86.6          | 69.4       | 75.1         |
+| BERT fine-tuning  | 84.5         | 82.4          | 82.7       | 82.5         |
+| CodeBERT + RF      | 80.7         | 87.6          | 72.9       | 78.0         |
+| CodeBERT fine-tuning | 87.4       | 86.3          | 85.2       | 85.5         |
+
+
+
+F1-score per category for the best examined models
 | Category                | CodeBERT fine-tuning | BERT fine-tuning | BoW + RF | CodeBERT + RF | fastText + RF |
 |-------------------------|----------------------|------------------|----------|---------------|---------------|
 | SQL Injection           | 90                   | 86               | 89       | 82            | 86            |
