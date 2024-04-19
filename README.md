@@ -10,8 +10,11 @@ git clone https://github.com/iliaskaloup/vuln_classification.git
 and navigate to the cloned repository.
 
 The "data" directory contains the data required for training and evaluating the models.
+
 The csv files in the repository are the pre-processed formats of the dataset (bag of words, sequences of tokens).
+
 The jupyter notebook files (.ipynb) are python files, which perform the whole analysis. 
+
 
 Specifically:
 • data_preparation constructs the dataset
