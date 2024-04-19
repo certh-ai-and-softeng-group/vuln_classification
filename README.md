@@ -12,20 +12,28 @@ and navigate to the cloned repository.
 The "data" directory contains the data required for training and evaluating the models.
 The csv files in the repository are the pre-processed formats of the dataset (bag of words, sequences of tokens).
 The jupyter notebook files (.ipynb) are python files, which perform the whole analysis. 
+
 Specifically:
 • data_preparation constructs the dataset
 
 • train_embeddings trains custom word embedding vectors using either word2vec or fastText
+
 • category_prediction contains the source code for employing and training word embedding algorithms (bag of words, word2vec, fastText, bert, codebert), Machine Learning and Deep Learning models
+
 • category_prediction_RF_averagedEmbeddings creates sentence-level vectors from the word embeddings (word2vec, fastText) and feeds them to ML models (Random Forest)
+
 • category_prediction_sentenceBertRF extracts sentence-level contextual embeddings from transformer models and feeds them to ML models (Random Forest)
+
 • finetuning_category_prediction_trainTestSplit performs fine-tuning of the CodeBERT model to the downstream task of vulnerability classification
+
 • finetuning_category_prediction_trainTestSplit_Bert performs fine-tuning of the BERT model to the downstream task of vulnerability classification
+
 
 ### Acknowledgements
 
-Special thanks to Hugging Face Libary for providing pre-trained Transformer-based Large Language Models
-Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natural Codebase for providing their dataset
+Special thanks to HuggingFace for providing the transformers libary
+Special thanks to Gensim for providing word embeddings models
+Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natural Codebase for providing their dataset.
 
 ~~~
 @article{wartschinski2022vudenc,
