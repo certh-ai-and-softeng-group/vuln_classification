@@ -5,7 +5,7 @@ Multi-class classification deep learning models using word embedding vectors to 
 
 To replicate the analysis and reproduce the results:
 ~~~
-git clone https://github.com/iliaskaloup/vuln_classification.git
+git clone https://github.com/certh-ai-and-softeng-group/vuln_classification.git
 ~~~
 and navigate to the cloned repository.
 
@@ -20,7 +20,7 @@ The jupyter notebook files (.ipynb) are python files, which perform the whole an
 
 • train_embeddings trains custom word embedding vectors using either word2vec or fastText
 
-• category_prediction contains the source code for employing and training word embedding algorithms (bag of words, word2vec, fastText, bert, codebert), Machine Learning and Deep Learning models
+• category_prediction contains the source code for employing word embedding algorithms (bow, word2vec, fastText, bert, codebert) and training Machine Learning models
 
 • category_prediction_RF_averagedEmbeddings creates sentence-level vectors from the word embeddings (word2vec, fastText) and feeds them to ML models (Random Forest)
 
@@ -35,9 +35,9 @@ The jupyter notebook files (.ipynb) are python files, which perform the whole an
 
 Special thanks to HuggingFace for providing the transformers libary
 
-Special thanks to Gensim for providing word embeddings models
+Special thanks to Gensim for providing word embedding models
 
-Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natural Codebase for providing their dataset.
+Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natural Codebase - for providing their dataset. For the dataset cite:
 
 ~~~
 @article{wartschinski2022vudenc,
@@ -51,6 +51,7 @@ Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natur
 }
 ~~~
 
+<!--
 ### Appendix
 
 Evaluation results of the Random Forest classifier per text vectorizing method
@@ -94,6 +95,7 @@ F1-score per category for the best examined models
 | Remote Code Execution   | 81                   | 71               | 86       | 80            | 81            |
 | Command Injection       | 91                   | 86               | 77       | 85            | 81            |
 | Path Disclosure         | 87                   | 85               | 68       | 72            | 79            |
+-->
 
 ### License
 
