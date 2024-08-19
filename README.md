@@ -99,7 +99,7 @@ F1-score per category for the best examined models
 
 ### License
 
-[MIT License](https://github.com/iliaskaloup/vuln_classification/blob/main/LICENSE)
+[MIT License](https://github.com/certh-ai-and-softeng-group/vuln_classification/blob/main/LICENSE)
 
 ### Citation
 
