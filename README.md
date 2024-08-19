@@ -51,7 +51,7 @@ Special thanks to VUDENC - Vulnerability Detection with Deep Learning on a Natur
 }
 ~~~
 
-<!--
+
 ### Appendix
 
 Evaluation results of the Random Forest classifier per text vectorizing method
@@ -95,7 +95,7 @@ F1-score per category for the best examined models
 | Remote Code Execution   | 81                   | 71               | 86       | 80            | 81            |
 | Command Injection       | 91                   | 86               | 77       | 85            | 81            |
 | Path Disclosure         | 87                   | 85               | 68       | 72            | 79            |
--->
+
 
 ### License
 
@@ -103,4 +103,4 @@ F1-score per category for the best examined models
 
 ### Citation
 
-To be filled...
+I. Kalouptsoglou, M. Siavvas, A. Ampatzoglou, D. Kehagias, A. Chatzigeorgiou, Vulnerability classification on source code using text mining and deep learning techniques, in: 24th IEEE International Conference on Software Quality, Reliability, and Security (QRS’ 24), 2024
